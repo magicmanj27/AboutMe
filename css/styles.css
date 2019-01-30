@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    font-family: 'Megrim', cursive;
+}
+
+/* ------------------------------------
+************ NAVIGATION ***************
+-------------------------------------- */
+
+.ulNav {
+    list-style: none;
+    font-weight: bolder;
+    font-size: 24px;
+    margin: 50px 26%;
+    padding: 0;
+    width: 800px;
+}
+
+.myNav ul li {
+    float: left; 
+    width: 200px;
+}
+
+.navLinks {
+    color: white;
+    text-decoration: none;
+}
