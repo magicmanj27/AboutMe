@@ -1,0 +1,112 @@
+/* ------------------------------------
+************ BASIC SETUP **************
+-------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f5f6fa;
+  color: #444;
+  font-family: "Megrim", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* ------------------------------------
+************ REUSABLE COMPONENTS *******
+-------------------------------------- */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* ------------------------------------
+************* Headings ****************
+-------------------------------------- */
+h1,
+h2,
+h3 {
+  font-weight: 400px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+
+/* ------------------------------------
+************ NAVIGATION ***************
+-------------------------------------- */
+
+header {
+  background-image: url(rafael-de-nadai-588387-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  clip-path: polygon(50% 99%, 100% 82%, 100% 0, 0 0, 0 82%);
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.ulNav {
+  list-style: none;
+}
+
+.myNav ul li {
+  display: inline-block;
+  margin-left: 235px;
+  margin-top: 50px;
+}
+
+.myNav ul li:hover {
+  color: white;
+}
+
+.navLinks {
+  padding: 5px 10px;
+  color: #444;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  border: 3px solid #444;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.navLinks:hover {
+  background-color: #444;
+  color: white;
+}
+
+#about {
+  height: 1000px;
+  text-align: center;
+}
