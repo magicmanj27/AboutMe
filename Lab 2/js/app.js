@@ -52,29 +52,18 @@
 
 function numberGuess() {
   var myNumber = 3;
-  var attempts = 0;
+  var attempts =  1;
   var userNumberGuess = prompt("How many pokemon did I catch this week?");
-  var cancel = false;
 
-  do {
-    if (userNumberGuess < myNumber) {
-      userNumberGuess = prompt("Your guess is to low, please try again!");
-      console.log("low try again");
+  while (attempts !== 4){
+    if (userNumberGuess < myNumber){
+      userNumberGuess = prompt("Low");
     } else if (userNumberGuess > myNumber){
-      userNumberGuess = prompt("You guess was to high, please try again!");
-      console.log("High try again");
-    } 
+      userNumberGuess = prompt("High");
+    } else {
+      alert("Right");
+    }
     attempts++;
-  } while(userNumberGuess !== myNumber && attempts < 2);
-  if (userNumberGuess === 3){
-    alert("You guessed the correct answer!");
-    console.log("correct");
-    cancel = true;
-  }
-  console.log("while hit");
-  if (attempts === 3 && cancel === false) {
-    alert('you ran out of guessess');
-    console.log("out of guesses");
   }
 }
 
