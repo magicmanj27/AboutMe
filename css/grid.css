@@ -1,0 +1,16 @@
+
+.grid-container {
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* padding: 1px; */
+    /* grid-gap: 10px; */
+    justify-items: center;
+  }
+
+.grid-item {
+    /* margin-left:4rem;
+    margin-right: 4rem; */
+}

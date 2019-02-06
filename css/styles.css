@@ -12,8 +12,8 @@ html,
 body {
   background-color: #f5f6fa;
   color: #444;
-  font-family: "Megrim", cursive;
-  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -41,7 +41,8 @@ section {
 h1,
 h2,
 h3 {
-  font-weight: 400px;
+  font-family: "Megrim", cursive;
+  font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -77,6 +78,7 @@ header {
 }
 
 .ulNav {
+  font-family: "Megrim", cursive;
   list-style: none;
 }
 
@@ -109,4 +111,11 @@ header {
 #about {
   height: 1000px;
   text-align: center;
+}
+
+.card {
+  background-color: orangered;
+  height: 25rem;
+  width: 15rem;
+  
 }
