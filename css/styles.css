@@ -77,6 +77,10 @@ header {
   transform: translate(-50%, -30%);
 }
 
+.myNav{
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .ulNav {
   font-family: "Megrim", cursive;
   list-style: none;
@@ -84,8 +88,9 @@ header {
 
 .myNav ul li {
   display: inline-block;
-  margin-left: 235px;
+  margin-left: 11%;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .myNav ul li:hover {
