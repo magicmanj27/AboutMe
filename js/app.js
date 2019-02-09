@@ -123,6 +123,9 @@ function numberGuess() {
 
 function colorGuess() {
   var favoriteColors = ['black', 'green', 'purple'];
+  var attempts = 3;
+  var tries = 1;
+  var guess = false;
 
   var usersGuess = prompt('Can you guess one of my favorites?').toLowerCase();
 
@@ -140,14 +143,29 @@ function colorGuess() {
 
   for (var i = 0; i < favoriteColors.length; i++) {
     if (usersGuess === favoriteColors[i]) {
-      usersGuess = true;
+      guess = true;
       break;
     }
   }
-
-  if (usersGuess === true) {
+  if (guess === true) {
     alert('You guessed one of my favorite colors!');
+    alert('It took you ' + tries + ' tries out of ' + attempts + ' available attempts.');
   } else {
-    alert('You did not enter in a correct color!');
+    for (var j = 0; j < 2; j++) {
+      tries++;
+      usersGuess = prompt("You did not enter a correct color, please try again!");
+      if(usersGuess === favoriteColors[0] || usersGuess === favoriteColors[1] || usersGuess === favoriteColors[2]){
+        guess = true;
+        break;
+      } else {
+        guess = false;
+      }
+    }
+    if (guess === true) {
+      alert('You guess the correct color');
+      alert('It took you ' + tries + ' tries out of ' + attempts + ' available attempts.')
+    } else {
+      alert('You ran out of chances to guess the color');
+    }
   }
 }
