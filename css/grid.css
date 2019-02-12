@@ -1,8 +1,8 @@
 
 .grid-container {
     margin-top: 5rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 20rem;
     display: grid;
     grid-template-columns: auto auto auto;
     /* padding: 1px; */

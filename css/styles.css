@@ -68,13 +68,14 @@ header {
   clip-path: polygon(50% 99%, 100% 82%, 100% 0, 0 0, 0 82%);
 }
 
-.hero-text-box {
+.title, .is-1 {
   position: absolute;
   width: 1140px;
   text-align: center;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
+  font-weight: bold;
 }
 
 .myNav{
@@ -118,9 +119,16 @@ header {
   text-align: center;
 }
 
+/* Card Content */
+
+.columns {
+ padding-left: 10%;
+ padding-right: 10%;
+}
+
 .card {
-  background-color: orangered;
-  height: 25rem;
-  width: 15rem;
-  
+  margin: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+ 
 }

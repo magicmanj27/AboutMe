@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // var answer1 = prompt("Yes or No, do I own a dog?").toLowerCase();
 
@@ -53,15 +53,15 @@
 function numberGuess() {
   var myNumber = 3;
   var attempts =  1;
-  var userNumberGuess = prompt("How many pokemon did I catch this week?");
+  var userNumberGuess = prompt('How many pokemon did I catch this week?');
 
   while (attempts !== 4){
     if (userNumberGuess < myNumber){
-      userNumberGuess = prompt("Low");
+      userNumberGuess = prompt('Low');
     } else if (userNumberGuess > myNumber){
-      userNumberGuess = prompt("High");
+      userNumberGuess = prompt('High');
     } else {
-      alert("Right");
+      alert('Right');
     }
     attempts++;
   }
@@ -69,11 +69,11 @@ function numberGuess() {
 
 numberGuess();
 
-// var favoriteColors = ["black", "green", "purple"];
+var favoriteColors = ['black', 'green', 'purple'];
 
-// var usersGuess = prompt("What are my favorite color?").toLowerCase();
+var usersGuess = prompt('What are my favorite color?').toLowerCase();
 
-// console.log(favoriteColors);
+console.log(favoriteColors);
 
 // // if (
 // //   usersGuess === favoriteColors[0] ||
@@ -93,15 +93,15 @@ numberGuess();
 // //     }
 // //   }
 // // }
-// for (var i = 0; i < favoriteColors.length; i++) {
-//   if (usersGuess === favoriteColors[i]) {
-//     usersGuess = true;
-//     break;
-//   }
-// }
+for (var i = 0; i < favoriteColors.length; i++) {
+  if (usersGuess === favoriteColors[i]) {
+    usersGuess = true;
+    break;
+  }
+}
 
-// if (usersGuess === true) {
-//   alert("You guessed one of my favorite colors");
-// } else {
-//   alert("You did not enter in a correct color");
-// }
+if (usersGuess === true) {
+  alert('You guessed one of my favorite colors');
+} else {
+  alert('You did not enter in a correct color');
+}
